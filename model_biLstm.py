@@ -1,16 +1,11 @@
-
-
-
-
-
 import keras
 from keras import Sequential
+import numpy as np
 from keras.models import Model
 from keras.layers import Dense, Dropout, LSTM, Bidirectional
 from keras.layers.embeddings import Embedding
 from tensorflow.keras.callbacks import EarlyStopping
 import tensorflow as tf
-
 
 class biLstmModel():
     def __init__(self, word_to_vec_map, word_to_index, max_len):
